@@ -1,4 +1,100 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url(/fonts/statosskyeng-v1.001/Desktop/stratosskyeng-medium.otf);
+}
+body {
+  font-family: "StratosSkyeng", sans-serif;
+}
+
+.area {
+  margin: auto;
+  padding-top: 158px;
+  width: 1024px;
+  height: 774px;
+  background: #004980;
+}
+.area-level {
+  margin: auto;
+  width: 480px;
+  height: 459px;
+  background: #c2f5ff;
+  border-radius: 12px;
+}
+.area-level-text {
+  padding-top: 52px;
+  padding-bottom: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #004980;
+}
+.area-level-levels {
+  text-align: center;
+  width: 340px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.area-level-button {
+  padding-top: 68px;
+  text-align: center;
+}
+
+.buttonLevel {
+  flex-direction: be;
+  gap: 24px;
+  width: 98px;
+  height: 98px;
+  left: 341px;
+  top: 354px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: white;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.buttonLevel:hover {
+  color: #ffffff;
+  background-color: #0080c1;
+  transform: scale(1.2);
+}
+
+.buttonStart {
+  width: 246px;
+  height: 50px;
+  left: 389px;
+  top: 519px;
+  background: #7ac100;
+  border-radius: 12px;
+  border: white;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.buttonStart:hover {
+  color: #ffffff;
+  background-color: green;
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
