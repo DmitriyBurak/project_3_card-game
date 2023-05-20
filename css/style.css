@@ -142,4 +142,34 @@ body {
   color: #ffffff;
   background-color: green;
   transform: scale(1.1);
+}
+
+.warning {
+  display: none;
+  color: #004980;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.levelForGame {
+  gap: 24px;
+  width: 98px;
+  height: 98px;
+  left: 341px;
+  top: 354px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: white;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+  margin: auto;
+}
+
+.but1 {
+  display: none;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
