@@ -10,6 +10,7 @@
 
 body {
   font-family: "StratosSkyeng", sans-serif;
+  background-color: #004980;
 }
 
 .area {
@@ -17,7 +18,7 @@ body {
   padding-top: 158px;
   width: 1024px;
   height: 774px;
-  background: #004980;
+  // background: #004980;
 
   &-level {
     margin: auto;
@@ -25,6 +26,9 @@ body {
     height: 459px;
     background: #c2f5ff;
     border-radius: 12px;
+    a {
+      text-decoration: none;
+    }
 
     &-text {
       padding-top: 52px;
@@ -50,8 +54,27 @@ body {
   }
 }
 
+.toMainPage {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #004980;
+}
+
+.area-level-text-game {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #004980;
+}
+
 .buttonLevel {
-  flex-direction: be;
   gap: 24px;
   width: 98px;
   height: 98px;
@@ -70,6 +93,32 @@ body {
   cursor: pointer;
 }
 
+.buttonLevel_1 {
+  display: inline-block;
+  margin: auto;
+}
+
+// .area-level {
+//   position: relative;
+// }
+
+.changeLevel {
+  margin: auto;
+  margin-bottom: -52px;
+  gap: 24px;
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: white;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+}
+
 .buttonLevel:hover {
   color: #ffffff;
   background-color: #0080c1;
@@ -79,8 +128,6 @@ body {
 .buttonStart {
   width: 246px;
   height: 50px;
-  left: 389px;
-  top: 519px;
   background: #7ac100;
   border-radius: 12px;
   border: white;
@@ -94,10 +141,44 @@ body {
   color: #ffffff;
   transition: all 0.4s;
   cursor: pointer;
+  a {
+    color: #ffffff;
+  }
 }
 
 .buttonStart:hover {
   color: #ffffff;
   background-color: green;
   transform: scale(1.1);
+}
+
+.warning {
+  display: none;
+  // display: block;
+  color: #004980;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.levelForGame {
+  gap: 24px;
+  width: 98px;
+  height: 98px;
+  left: 341px;
+  top: 354px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: white;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+  margin: auto;
+}
+
+.but1 {
+  display: none;
+  margin: auto;
 }
