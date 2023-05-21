@@ -5,30 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Game</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="area">
       <div class="area-level">
-        <p class="area-level-text">
-          Выбери <br />
-          сложность
-        </p>
+        <a href="index.html">
+          <p class="area-level-text">
+            Выбери <br />
+            сложность
+          </p>
+        </a>
         <div class="area-level-levels">
-          <button class="buttonLevel">1</button>
-          <button class="buttonLevel">2</button>
-          <button class="buttonLevel">3</button>
+          <button type="button" class="buttonLevel level1" data-levelId="1">
+            1
+          </button>
+          <button type="button" class="buttonLevel level2" data-levelId="2">
+            2
+          </button>
+          <button type="button" class="buttonLevel level3" data-levelId="3">
+            3
+          </button>
         </div>
         <div class="area-level-button">
-          <button class="buttonStart">Старт</button>
+          <button class="buttonStart but0">
+            <a class="buttonStarter">Старт</a>
+          </button>
+          <button class="buttonStart but1">
+            <a href="game-field.html" class="buttonStarter">Старт</a>
+          </button>
+        </div>
+        <div class="warning">
+          <p>Нужно выбрать уровень!</p>
         </div>
       </div>
     </div>
+    <script type="module" src="level.js"></script>
   </body>
 </html>
