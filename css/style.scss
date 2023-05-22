@@ -10,6 +10,14 @@
 
 body {
   font-family: "StratosSkyeng", sans-serif;
+  background-color: #004980;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding-left: 26px;
+  padding-right: 23px;
 }
 
 .area {
@@ -17,7 +25,7 @@ body {
   padding-top: 158px;
   width: 1024px;
   height: 774px;
-  background: #004980;
+  // background: #004980;
 
   &-level {
     margin: auto;
@@ -25,6 +33,9 @@ body {
     height: 459px;
     background: #c2f5ff;
     border-radius: 12px;
+    a {
+      text-decoration: none;
+    }
 
     &-text {
       padding-top: 52px;
@@ -50,8 +61,27 @@ body {
   }
 }
 
+.toMainPage {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #004980;
+}
+
+.area-level-text-game {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #004980;
+}
+
 .buttonLevel {
-  flex-direction: be;
   gap: 24px;
   width: 98px;
   height: 98px;
@@ -70,6 +100,32 @@ body {
   cursor: pointer;
 }
 
+.buttonLevel_1 {
+  display: inline-block;
+  margin: auto;
+}
+
+// .area-level {
+//   position: relative;
+// }
+
+.changeLevel {
+  margin: auto;
+  margin-bottom: -52px;
+  gap: 24px;
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: white;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+}
+
 .buttonLevel:hover {
   color: #ffffff;
   background-color: #0080c1;
@@ -79,8 +135,6 @@ body {
 .buttonStart {
   width: 246px;
   height: 50px;
-  left: 389px;
-  top: 519px;
   background: #7ac100;
   border-radius: 12px;
   border: white;
@@ -94,10 +148,450 @@ body {
   color: #ffffff;
   transition: all 0.4s;
   cursor: pointer;
+  a {
+    color: #ffffff;
+  }
 }
 
 .buttonStart:hover {
   color: #ffffff;
   background-color: green;
   transform: scale(1.1);
+}
+
+.warning {
+  display: none;
+  // display: block;
+  color: #004980;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.levelForGame {
+  gap: 24px;
+  width: 98px;
+  height: 98px;
+  left: 341px;
+  top: 354px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: white;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+  margin: auto;
+}
+
+.but1 {
+  display: none;
+  margin: auto;
+}
+
+// вторая страница - game-field_1
+
+.game_nav {
+  height: 148px;
+  display: flex;
+  justify-content: space-between;
+  &_taming {
+    width: 155px;
+    height: 91px;
+    color: #ffffff;
+    margin-top: 22px;
+  }
+  &_replay {
+    margin-bottom: 46px;
+    margin-top: 52px;
+    border: none;
+    width: 246px;
+    height: 50px;
+    background: #7ac100;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.minsek {
+  margin-left: 39px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.game-field {
+  margin: auto auto 49px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  &_back {
+    margin: 6px;
+    height: 121px;
+    width: 83px;
+    background-color: #c2f5ff;
+    border-radius: 4px;
+    background-image: url("/img/card-back.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-origin: content-box;
+  }
+  &_1 {
+    margin: auto;
+    height: 133px;
+    width: 95px;
+    background-color: white;
+    border-radius: 4px;
+    background-image: url("/img/card_1.svg");
+  }
+}
+
+// третья страница - game-field_2
+
+.card_1 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_1.svg");
+}
+
+.card_2 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_2.svg");
+}
+
+.card_3 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_3.svg");
+}
+
+.card_4 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_4.svg");
+}
+
+.card_5 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_5.svg");
+}
+
+.card_6 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_6.svg");
+}
+
+.card_7 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_7.svg");
+}
+
+.card_8 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_8.svg");
+}
+
+.card_9 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_9.svg");
+}
+
+.card_10 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_10.svg");
+}
+
+.card_11 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_11.svg");
+}
+
+.card_12 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_12.svg");
+}
+
+.card_13 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_13.svg");
+}
+
+.card_14 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_14.svg");
+}
+
+.card_15 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_15.svg");
+}
+
+.card_16 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_16.svg");
+}
+
+.card_17 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_17.svg");
+}
+
+.card_18 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_18.svg");
+}
+
+.card_19 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_19.svg");
+}
+
+.card_20 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_20.svg");
+}
+
+.card_21 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_21.svg");
+}
+
+.card_22 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_22.svg");
+}
+
+.card_23 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_23.svg");
+}
+
+.card_24 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_24.svg");
+}
+
+.card_25 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_25.svg");
+}
+
+.card_26 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_26.svg");
+}
+
+.card_27 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_27.svg");
+}
+
+.card_28 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_28.svg");
+}
+
+.card_29 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_29.svg");
+}
+
+.card_30 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_30.svg");
+}
+
+.card_31 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_31.svg");
+}
+
+.card_32 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_32.svg");
+}
+
+.card_33 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_33.svg");
+}
+
+.card_34 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_34.svg");
+}
+
+.card_35 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_35.svg");
+}
+
+.card_36 {
+  margin: auto;
+  height: 133px;
+  width: 95px;
+  background-color: white;
+  border-radius: 4px;
+  background-image: url("/img/card_36.svg");
 }

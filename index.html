@@ -16,19 +16,42 @@
   <body>
     <div class="area">
       <div class="area-level">
-        <p class="area-level-text">
+        <!-- <p class="area-level-text">
           Выбери <br />
           сложность
-        </p>
+        </p> -->
+        <a href="index.html">
+          <p class="area-level-text">
+            Выбери <br />
+            сложность
+          </p>
+        </a>
         <div class="area-level-levels">
-          <button class="buttonLevel">1</button>
-          <button class="buttonLevel">2</button>
-          <button class="buttonLevel">3</button>
+          <button type="button" class="buttonLevel level1" data-levelId="1">
+            1
+          </button>
+          <button type="button" class="buttonLevel level2" data-levelId="2">
+            2
+          </button>
+          <button type="button" class="buttonLevel level3" data-levelId="3">
+            3
+          </button>
         </div>
         <div class="area-level-button">
-          <button class="buttonStart">Старт</button>
+          <button class="buttonStart but0">
+            <a class="buttonStarter">Старт</a>
+            <!-- Старт -->
+          </button>
+          <button class="buttonStart but1">
+            <a href="./game-field_1.html" class="buttonStarter">Старт</a>
+          </button>
+        </div>
+        <div class="warning">
+          <p>Нужно выбрать уровень!</p>
         </div>
       </div>
     </div>
+    <script type="module" src="/src/level.js"></script>
+    <!-- <script type="module" src="areagame.js"></script> -->
   </body>
 </html>
